@@ -1,0 +1,27 @@
+:root {
+  --max-width: 900px;
+  --accent: #0a66c2;
+  --muted: #666;
+  --bg: #fff;
+}
+*{box-sizing:border-box}
+body {font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#222; background:var(--bg)}
+.container{max-width:var(--max-width); margin:0 auto; padding:1rem}
+.site-header{background:#f7f7f7; border-bottom:1px solid #ececec}
+.site-header .container{display:flex; align-items:center; justify-content:space-between}
+.site-header h1{margin:.5rem 0}
+.site-header a{color:inherit; text-decoration:none}
+.site-header nav a{margin-left:1rem}
+.hero{padding:2rem 0}
+.post article{padding:1rem 0}
+.site-footer{padding:1rem 0; border-top:1px solid #eee; color:var(--muted)}
+
+/* Responsive YouTube embed */
+.video-wrap{position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%}
+.video-wrap iframe{position:absolute; top:0; left:0; width:100%; height:100%}
+
+/* small screens adjustments */
+@media (max-width:640px){
+  .site-header .container{flex-direction:column; align-items:flex-start}
+  .site-header nav{margin-top:.5rem}
+}
